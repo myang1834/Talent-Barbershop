@@ -16,34 +16,61 @@ export function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black shadow-lg py-2' : 'bg-transparent py-4'}`}>
+  // Add smooth scroll functionality
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const targetId = href.substring(1);
+      const element = document.getElementById(targetId);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 80,
+          behavior: 'smooth'
+        });
+        // Close mobile menu if open
+        setIsMenuOpen(false);
+      }
+    }
+  };
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#003278] shadow-lg py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="text-white text-2xl font-bold">
-          Everett Barbershop
+        <a href="#" className="text-white">
+          <img src="/0_0.png" alt="Talent Barbershop Logo" className="h-20" />
         </a>
         {/* Desktop Navigation */}
-        <nav className="hidden md:block">
-          <ul className="flex space-x-8">
-            {['Home', 'About', 'Services', 'Gallery', 'Team', 'Contact'].map(item => <li key={item}>
-                  <a href={`#${item.toLowerCase()}`} className="text-white hover:text-gray-300 transition-colors duration-300">
+        <div className="hidden md:flex items-center">
+          <nav className="mr-6">
+            <ul className="flex space-x-8">
+              {['About', 'Services', 'Gallery', 'Team', 'Testimonials', 'Contact'].map(item => <li key={item}>
+                  <a href={`#${item.toLowerCase()}`} className="text-white hover:text-[#C0111F] transition-colors duration-300" onClick={handleNavClick}>
                     {item}
                   </a>
                 </li>)}
-          </ul>
-        </nav>
+            </ul>
+          </nav>
+          <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-2 px-6 rounded-full font-semibold transition-colors duration-300" aria-label="Book an appointment now at Talent Barbershop">
+            Book Now
+          </a>
+        </div>
         {/* Mobile Menu Button */}
         <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
       {/* Mobile Navigation */}
-      {isMenuOpen && <div className="md:hidden bg-black">
+      {isMenuOpen && <div className="md:hidden bg-[#003278]">
           <ul className="flex flex-col items-center py-4">
-            {['Home', 'About', 'Services', 'Gallery', 'Team', 'Contact'].map(item => <li key={item} className="py-2">
-                  <a href={`#${item.toLowerCase()}`} className="text-white hover:text-gray-300 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
-                    {item}
-                  </a>
-                </li>)}
+            {['About', 'Services', 'Gallery', 'Team', 'Testimonials', 'Contact'].map(item => <li key={item} className="py-2">
+                <a href={`#${item.toLowerCase()}`} className="text-white hover:text-[#C0111F] transition-colors duration-300" onClick={handleNavClick}>
+                  {item}
+                </a>
+              </li>)}
+            <li className="py-4">
+              <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-2 px-6 rounded-full font-semibold transition-colors duration-300" aria-label="Book an appointment now at Talent Barbershop">
+                Book Now
+              </a>
+            </li>
           </ul>
         </div>}
     </header>;
