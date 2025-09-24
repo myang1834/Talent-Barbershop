@@ -1,4 +1,5 @@
 import React from 'react';
+import { BookNow } from './BookNow';
 export function Hero() {
   return <section id="home" className="relative h-screen w-full bg-[#000000]">
       {/* Background Image */}
@@ -14,9 +15,9 @@ export function Hero() {
           Classic cuts and modern styles by skilled barbers. Family-friendly
           barbershop serving Everett, Massachusetts since 2019.
         </p>
-        <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-3 px-8 rounded-full font-semibold flex items-center justify-center transition-colors duration-300 text-lg" aria-label="Book an appointment now at Talent Barbershop">
-          Book Now
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <BookNow className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-3 px-8 rounded-full font-semibold flex items-center justify-center transition-colors duration-300 text-lg" />
+        </div>
       </div>
     </section>;
 }

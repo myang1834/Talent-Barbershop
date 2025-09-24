@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { BookNow } from './BookNow';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,9 +50,7 @@ export function Header() {
                 </li>)}
             </ul>
           </nav>
-          <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-2 px-6 rounded-full font-semibold transition-colors duration-300" aria-label="Book an appointment now at Talent Barbershop">
-            Book Now
-          </a>
+          <BookNow className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-2 px-6 rounded-full font-semibold transition-colors duration-300" />
         </div>
         {/* Mobile Menu Button */}
         <button className="md:hidden text-white" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -67,9 +66,7 @@ export function Header() {
                 </a>
               </li>)}
             <li className="py-4">
-              <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-2 px-6 rounded-full font-semibold transition-colors duration-300" aria-label="Book an appointment now at Talent Barbershop">
-                Book Now
-              </a>
+              <BookNow className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-2 px-6 rounded-full font-semibold transition-colors duration-300" />
             </li>
           </ul>
         </div>}

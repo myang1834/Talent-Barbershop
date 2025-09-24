@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const images = [{
-    url: "/Screen_Shot_2025-09-15_at_12.42.01_AM.png",
+    url: "/haircut_gal_2.jpg",
     alt: 'Stylish modern fade haircut with well-groomed beard at Talent Barbershop'
   }, {
     url: "/haircut_gallery.jpg",

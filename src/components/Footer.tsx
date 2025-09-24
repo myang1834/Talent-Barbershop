@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 export function Footer() {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-[#003278] text-white py-12">
@@ -18,9 +18,6 @@ export function Footer() {
               </a>
               <a href="https://www.instagram.com/talentbarbershop2019/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#C0111F] transition-colors duration-300" aria-label="Follow Talent Barbershop on Instagram">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-[#C0111F] transition-colors duration-300">
-                <Twitter size={20} />
               </a>
             </div>
           </div>

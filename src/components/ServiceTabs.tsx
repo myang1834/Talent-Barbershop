@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Scissors, Calendar, Phone, Clock, X } from 'lucide-react';
+import { BookNow } from './BookNow';
 interface Service {
   id: string;
   title: string;
@@ -232,9 +233,7 @@ export function ServiceTabs() {
                   <p className="text-gray-600">{service.description}</p>
                 </div>
                 <div className="px-6 pb-4">
-                  <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="block w-full bg-[#003278] text-white text-center py-2 rounded-md hover:bg-[#002255] transition-colors duration-300">
-                    Book Now
-                  </a>
+                  <BookNow className="block w-full bg-[#003278] text-white text-center py-2 rounded-md hover:bg-[#002255] transition-colors duration-300" />
                 </div>
               </motion.div>)}
           </motion.div>

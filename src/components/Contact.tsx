@@ -1,5 +1,6 @@
 import React, { lazy } from 'react';
 import { MapPin, Phone, Clock, Mail } from 'lucide-react';
+import { BookNow } from './BookNow';
 export function Contact() {
   return <section id="contact" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
@@ -62,15 +63,13 @@ export function Contact() {
                   <a href="tel:8572372107" className="bg-[#003278] text-white hover:bg-[#002255] py-3 px-6 rounded-full font-semibold inline-block transition-colors duration-300" aria-label="Call Talent Barbershop now">
                     Call Now
                   </a>
-                  <a href="https://booksy.com/en-us/573808_talent-barber-shop_barber-shop_22262_everett" target="_blank" rel="noopener noreferrer" className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-3 px-6 rounded-full font-semibold inline-block transition-colors duration-300" aria-label="Book an appointment now at Talent Barbershop">
-                    Book Now
-                  </a>
+                  <BookNow className="bg-[#C0111F] text-white hover:bg-[#9a0e19] py-3 px-6 rounded-full font-semibold inline-block transition-colors duration-300" />
                 </div>
               </div>
             </div>
           </div>
           <div className="h-[400px] lg:h-auto rounded-lg overflow-hidden shadow-lg">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.7626343241437!2d-71.05583312424035!3d42.40480982579629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e371217e43c1b3%3A0xa3dcb11c9f9fcd0d!2s6%20Chelsea%20St%2C%20Everett%2C%20MA%2002149!5e0!3m2!1sen!2sus!4v1699379826984!5m2!1sen!2sus" width="100%" height="100%" style={{
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5891.95128665722!2d-71.05763632371982!3d42.40696367118855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3710cf2005655%3A0xb90455b4205f1c1!2sTalent%20Barber%20Shop!5e0!3m2!1sen!2sus!4v1758256079698!5m2!1sen!2sus" width="100%" height="100%" style={{
             border: 0
           }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Talent Barbershop location map" aria-label="Google Maps showing Talent Barbershop location at 6 Chelsea St, Everett, MA"></iframe>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
 import { InstagramEmbed } from './InstagramEmbed';
+import { BookNow } from './BookNow';
 export function InstagramFeed() {
   // Real Instagram posts from Talent Barbershop
   const instagramPosts = [{
