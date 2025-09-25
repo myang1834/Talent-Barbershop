@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Scissors, Calendar, Phone, Clock, X } from 'lucide-react';
+import { Scissors, Calendar, Phone, Clock, X, Package, Plus } from 'lucide-react';
 import { BookNow } from './BookNow';
 interface Service {
   id: string;
@@ -24,7 +24,7 @@ export function ServiceTabs() {
   }, {
     id: 'combo',
     label: 'Combo Services',
-    icon: <div size={20} />
+    icon: <Package size={20} />
   }, {
     id: 'beard',
     label: 'Beard Services',
@@ -32,7 +32,7 @@ export function ServiceTabs() {
   }, {
     id: 'additional',
     label: 'Additional Services',
-    icon: <div size={20} />
+    icon: <Plus size={20} />
   }];
   const allServices: Record<string, Service[]> = {
     haircuts: [{
@@ -205,8 +205,8 @@ export function ServiceTabs() {
         }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allServices[activeTab].map(service => <motion.div key={service.id} whileHover={{
             scale: 1.03
-          }} className="bg-white rounded-lg overflow-hidden shadow-lg">
-                <div className="h-90 overflow-hidden relative">
+          }} className="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
+                <div className="h-75 overflow-hidden relative">
                   {service.isLogo ? <div className="w-full h-full flex items-center justify-center bg-gray-100">
                       <img src={service.image} alt={service.title} className="w-32 h-32 object-contain" onClick={() => {
                   setSelectedImage(service.image);
@@ -217,7 +217,7 @@ export function ServiceTabs() {
                 setSelectedTitle(service.title);
               }} />}
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow">
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="text-xl font-bold text-[#003278]">
                       {service.title}
@@ -232,7 +232,7 @@ export function ServiceTabs() {
                   </div>
                   <p className="text-gray-600">{service.description}</p>
                 </div>
-                <div className="px-6 pb-4">
+                <div className="px-6 pb-4 mt-auto">
                   <BookNow className="block w-full bg-[#003278] text-white text-center py-2 rounded-md hover:bg-[#002255] transition-colors duration-300" />
                 </div>
               </motion.div>)}

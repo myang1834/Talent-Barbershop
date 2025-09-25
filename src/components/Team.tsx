@@ -39,7 +39,7 @@ export function Team() {
     name: 'Rafael',
     role: 'Master Barber & Owner',
     bio: 'With over 15 years of experience, Rafael specializes in classic cuts and hot towel shaves.',
-    image: "/IMG_5938.jpg",
+    image: "/Rafael_Portrait.jpg",
     socials: {
       instagram: 'https://www.instagram.com/talentbarbershop2019/',
       facebook: '#'
