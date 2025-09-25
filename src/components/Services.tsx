@@ -12,7 +12,7 @@ function ServiceCard({
   image
 }: ServiceProps) {
   return <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <img src={image} alt={title} className="w-full h-80 object-cover" />
       <div className="p-6">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-xl font-bold">{title}</h3>

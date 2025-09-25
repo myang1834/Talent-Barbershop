@@ -49,8 +49,20 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
-          <p>&copy; {currentYear} Talent Barbershop. All rights reserved.</p>
+        <div className="border-t border-gray-700 mt-12 pt-8 text-center">
+          <p className="text-gray-300">
+            &copy; {currentYear} Talent Barbershop. All rights reserved.
+          </p>
+          <div className="mt-6 mb-2">
+            <a href="https://www.getpagoda.com/" target="_blank" rel="noopener noreferrer" className="inline-block">
+              <div className="text-[##FFFFFF] font-bold text-xl">
+                Made by Pagoda
+              </div>
+              <div className="text-gray-300 text-xs tracking-widest">
+                WWW.GETPAGODA.COM
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </footer>;
