@@ -9,7 +9,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-shadow-lg">
-          Talent Barber Shop | Professional Haircuts in Everett, MA
+          Talent Barbershop | Professional Haircuts in Everett, MA
         </h1>
         <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl text-shadow-md">
           Classic cuts and modern styles by skilled barbers. Family-friendly
