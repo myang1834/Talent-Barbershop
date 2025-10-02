@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { ServiceTabs } from './components/ServiceTabs';
+import { Products } from './components/Products';
 import { Gallery } from './components/Gallery';
 import { Team } from './components/Team';
 import { InstagramFeed } from './components/InstagramFeed';
@@ -32,6 +33,7 @@ export function App() {
         <Hero />
         <About />
         <ServiceTabs />
+        <Products />
         <Gallery />
         <Team />
         <InstagramFeed />

@@ -43,7 +43,7 @@ export function Header() {
         <div className="hidden md:flex items-center">
           <nav className="mr-6">
             <ul className="flex space-x-8">
-              {['About', 'Services', 'Gallery', 'Team', 'Testimonials', 'Contact'].map(item => <li key={item}>
+              {['About', 'Services', 'Products', 'Gallery', 'Team', 'Testimonials', 'Contact'].map(item => <li key={item}>
                   <a href={`#${item.toLowerCase()}`} className="text-white hover:text-[#C0111F] transition-colors duration-300" onClick={handleNavClick}>
                     {item}
                   </a>
@@ -60,7 +60,7 @@ export function Header() {
       {/* Mobile Navigation */}
       {isMenuOpen && <div className="md:hidden bg-[#003278]">
           <ul className="flex flex-col items-center py-4">
-            {['About', 'Services', 'Gallery', 'Team', 'Testimonials', 'Contact'].map(item => <li key={item} className="py-2">
+            {['About', 'Services', 'Products', 'Gallery', 'Team', 'Testimonials', 'Contact'].map(item => <li key={item} className="py-2">
                 <a href={`#${item.toLowerCase()}`} className="text-white hover:text-[#C0111F] transition-colors duration-300" onClick={handleNavClick}>
                   {item}
                 </a>

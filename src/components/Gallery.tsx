@@ -29,6 +29,9 @@ export function Gallery() {
   }, {
     url: "/haircut.webp",
     alt: 'Sharp profile view of modern high fade haircut with textured top at Talent Barbershop'
+  }, {
+    url: "/IMG_6177.JPG",
+    alt: 'A childs first haircut at Talent Barbershop in Everett'
   }];
   return <section id="gallery" className="py-20 bg-white">
       <div className="container mx-auto px-4">
