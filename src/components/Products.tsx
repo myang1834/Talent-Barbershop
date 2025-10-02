@@ -102,34 +102,6 @@ export function Products() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="bg-[#003278] text-white p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-4">Why Choose Talent Products?</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="bg-[#C0111F] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="text-white" size={24} />
-                </div>
-                <h4 className="font-semibold mb-2">Professional Quality</h4>
-                <p className="text-sm text-gray-200">Same products used by our master barbers</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-[#C0111F] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="text-white" size={24} />
-                </div>
-                <h4 className="font-semibold mb-2">Natural Ingredients</h4>
-                <p className="text-sm text-gray-200">Premium, natural ingredients for healthy hair</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-[#C0111F] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="text-white" size={24} />
-                </div>
-                <h4 className="font-semibold mb-2">Made in USA</h4>
-                <p className="text-sm text-gray-200">Proudly manufactured in the United States</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
