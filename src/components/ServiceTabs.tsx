@@ -76,8 +76,7 @@ export function ServiceTabs() {
       description: 'Business in the front, party in the back - classic or modern mullet styles.',
       price: '$45',
       duration: '45 min',
-      image: "/0_0.png",
-      isLogo: true
+      image: "/mullet.png",
     }],
     combo: [{
       id: 'regular-beard',
@@ -114,8 +113,7 @@ export function ServiceTabs() {
       description: 'Just line. No down, no hot towel.',
       price: '$30',
       duration: '20 min',
-      image: "/0_0.png",
-      isLogo: true
+      image: "/beardtrim.png",
     }],
     additional: [{
       id: 'hair-trim',
@@ -123,16 +121,15 @@ export function ServiceTabs() {
       description: 'Quick touch-up to maintain your current style between full haircuts.',
       price: '$15',
       duration: '15 min',
-      image: "/0_0.png",
-      isLogo: true
+      image: "/hair trim.png",
+  
     }, {
       id: 'nose-wax',
       title: 'Nose Wax',
       description: 'Quick and painless nose hair removal using specialized wax.',
       price: '$10',
       duration: '5 min',
-      image: "/0_0.png",
-      isLogo: true
+      image: "/nose wax.png"
     }, {
       id: 'eyebrows',
       title: 'Eyebrows',
@@ -146,8 +143,7 @@ export function ServiceTabs() {
       description: 'Ear hair removal and cleaning for a polished appearance.',
       price: '$5',
       duration: '10 min',
-      image: "/0_0.png",
-      isLogo: true
+      image: "/ear hair removal.png"
     }, {
       id: 'design',
       title: 'Design',
@@ -206,16 +202,11 @@ export function ServiceTabs() {
             {allServices[activeTab].map(service => <motion.div key={service.id} whileHover={{
             scale: 1.03
           }} className="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
-                <div className="h-75 overflow-hidden relative">
-                  {service.isLogo ? <div className="w-full h-full flex items-center justify-center bg-gray-100">
-                      <img src={service.image} alt={service.title} className="w-32 h-32 object-contain" onClick={() => {
-                  setSelectedImage(service.image);
-                  setSelectedTitle(service.title);
-                }} />
-                    </div> : <img src={service.image} alt={service.title} className="w-full h-full object-cover object-center cursor-pointer" onClick={() => {
+                <div className="h-80 overflow-hidden relative bg-white">
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover object-center cursor-pointer" onClick={() => {
                 setSelectedImage(service.image);
                 setSelectedTitle(service.title);
-              }} />}
+              }} />
                 </div>
                 <div className="p-6 flex-grow">
                   <div className="flex justify-between items-center mb-2">

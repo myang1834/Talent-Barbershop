@@ -9,7 +9,7 @@ interface SEOProps {
 export function SEO({
   title = 'Talent Barbershop | Classic Cuts & Modern Styles in Everett, MA',
   description = 'Talent Barbershop offers professional haircuts, hot towel shaves, and beard trims in Everett, MA. Kid-friendly barbershop with special chairs for children. Book your appointment today for classic cuts and modern styles by skilled barbers.',
-  canonicalUrl = 'https://talentbarbershop.com',
+  canonicalUrl = 'https://talentbarbershop2019.com',
   ogImage = "/fade.jpg"
 }: SEOProps) {
   return <Helmet>

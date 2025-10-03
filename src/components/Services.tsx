@@ -34,10 +34,20 @@ export function Services() {
     price: '$30',
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
   }, {
+    title: 'Mullet',
+    description: 'Modern mullet with clean taper and texture. Business in the front, party in the back.',
+    price: '$30',
+    image: '/IMG_6100.JPG'
+  }, {
     title: 'Beard Trim',
     description: 'Precise beard shaping and trimming to keep your facial hair looking its best.',
     price: '$15',
-    image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    image: '/IMG_6177.JPG'
+  }, {
+    title: 'Nose Wax',
+    description: 'Quick and hygienic nose waxing to remove unwanted hair for a clean, fresh look.',
+    price: '$10',
+    image: '/IMG_6114.JPG'
   }, {
     title: 'Hot Towel Shave',
     description: 'Traditional straight razor shave with hot towels and premium shaving products.',
