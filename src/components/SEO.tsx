@@ -7,8 +7,8 @@ interface SEOProps {
   ogImage?: string;
 }
 export function SEO({
-  title = 'Talent Barbershop | Classic Cuts & Modern Styles in Everett, MA',
-  description = 'Talent Barbershop offers professional haircuts, hot towel shaves, and beard trims in Everett, MA. Kid-friendly barbershop with special chairs for children. Book your appointment today for classic cuts and modern styles by skilled barbers.',
+  title = 'Talent Barbershop | Kids Haircuts & Special Needs-Friendly Barbers in Everett, MA',
+  description = 'Talent Barbershop specializes in kids’ haircuts — including children with autism and special needs — in a calm, welcoming environment. Our experienced barbers make every visit stress-free and fun with patience, care, and kid-friendly chairs. Book your appointment today in Everett, MA.',
   canonicalUrl = 'https://talentbarbershop2019.com',
   ogImage = "/fade.jpg"
 }: SEOProps) {
